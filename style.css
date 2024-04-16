@@ -46,7 +46,7 @@ header{
 
 /* about Section */
 .about{
-    margin: 100px;
+    margin: 30px;
 
 }
 
@@ -56,5 +56,108 @@ header{
 }
 
 .about p{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* charity section */
+.charity .container{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.charity .container .charity-content{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+   
+}
+.bgco{
+    gap: 10px;
+    background: #e6e6e6;
+    padding: 10px;
+
+}
+.charity .container .charity-content .bgco p{
+    padding-bottom: 10px;
+}
+
+.charity .container .col{
+    width: 50%;
+}
+.charity .container .charity-image{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.charity-image img{
+    width: 275px;
+    margin: 7px;
+}
+
+@media screen and (max-width: 520px) {
+    .charity .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* ventures section */
+.ventures{
+    margin: 40px;
+}
+.ventures h1{
+    text-align: center;
+}
+.ventures p{
+    margin: 10px 0;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: whitesmoke;
+    background: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 14px;
+}
+
+/* blog section */
+.blogs h1{
+    text-align: center;
+}
+.blogs .blog-section{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.blogs .blog-section .blog-content{
+    width: 345px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.blogs .blog-section .blog-content:hover{
+transform: scale(1.05);
+color: blue;
+}
+
+.blogs .blog-section .blog-content img{
+    max-width: 100%;
+    height: 200px;
+   
+}
+.bgcoblog{
+    background: #e6e6e6;
+    padding: 10px;
+    height: 100px;
 }
