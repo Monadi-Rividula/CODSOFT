@@ -7,6 +7,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primarycolor:#660066;
+    --basecolor:whitesmoke;
+    --backgroundcolor:#e6e6e6;
+    --secondarycolor: #f3b7f3;
+    --textcolor:black;
+    --secondcolor2:#330066;
+
+}
+
+.h1title{
+    color: var(--primarycolor);
+}
+
 header{
     width: 100vw;
     height: 100vh;
@@ -21,19 +35,20 @@ header{
 
 .header-content{
     margin-left: 150px;
-    color: whitesmoke;
+    color: var(--basecolor);
     text-align: left;
     width: 100vmin;
 }
 
-.header-content h1{
+.header-content #header-title{
     font-size: 7vmin;
+    color: var(--basecolor)
 }
 
 .line{
     width: 150px;
     height: 4px;
-    background: whitesmoke;
+    background: var(--basecolor);
     margin: 10px 0px;
     border-radius: 5px;
 }
@@ -46,7 +61,7 @@ header{
 
 /* about Section */
 .about{
-    margin: 30px;
+    margin: 40px;
 
 }
 
@@ -61,28 +76,27 @@ header{
 
 
 /* charity section */
+
 .charity .container{
-    margin: 30px;
+    margin: 40px;
+    margin-bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 70px;
+    background: var(--secondarycolor);
 }
 
 .charity .container .charity-content{
-    max-width: 600px;
+    max-width: 570px;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: start;
-   
-}
-.bgco{
-    gap: 10px;
-    background: #e6e6e6;
+    margin-top: 20px;
     padding: 10px;
-
 }
+
 .charity .container .charity-content .bgco p{
     padding-bottom: 10px;
 }
@@ -109,7 +123,10 @@ header{
 
 /* ventures section */
 .ventures{
-    margin: 40px;
+    margin: 0 40px;
+    background: var(--backgroundcolor);
+    padding: 20px;
+    padding-top: 30px;
 }
 .ventures h1{
     text-align: center;
@@ -121,14 +138,23 @@ header{
 .btn{
     padding: 8px 20px;
     border-radius: 20px;
-    color: whitesmoke;
-    background: black;
+    color: var(--basecolor);
+    background: var(--primarycolor);
     text-decoration: none;
     margin: 20px;
     font-size: 14px;
 }
+.btn:hover{
+   
+    background-color: var(--secondcolor2);
+   
+}
 
 /* blog section */
+.blogs{
+    margin: 40px 0;
+}
+
 .blogs h1{
     text-align: center;
 }
@@ -144,8 +170,18 @@ header{
     width: 345px;
     text-decoration: none;
     transition: transform 0.3s ease;
+    color: black;
+  
 }
-
+.blogs .blog-section .blog-content h3{
+    color: var(--secondcolor2);
+}
+.blogs .blog-section .blog-content p{
+    font-size: 13px;
+}
+/* .blogs .blog-section .blog-content:visited {
+    color:var(--primarycolor);
+} */
 .blogs .blog-section .blog-content:hover{
 transform: scale(1.05);
 color: blue;
@@ -157,7 +193,7 @@ color: blue;
    
 }
 .bgcoblog{
-    background: #e6e6e6;
+    background-image: linear-gradient(#f3b7f3, #e6e6e6);
     padding: 10px;
     height: 100px;
 }
