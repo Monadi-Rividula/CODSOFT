@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+p{
+    font-size: 18px;
+}
 
 :root{
     --primarycolor:#660066;
@@ -92,7 +95,7 @@ header{
 }
 
 .charity .container .charity-content{
-    max-width: 570px;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -138,7 +141,9 @@ header{
 .ventures p{
     margin: 10px 0;
 }
-
+.ventures ul{
+    font-size: 17px;
+}
 .btn{
     padding: 10px 25px;
     border-radius: 20px;
@@ -152,7 +157,7 @@ header{
     cursor: pointer;
     display: inline-block;
 
-    font-family: "Reddit Mono", monospace;
+
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
